@@ -1,11 +1,12 @@
 import { Logo } from './logo';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
+import { CustomLink } from '../customLink/customLink';
 
 export const Navbar = () => {
   const [showNavbarMenu, setShowNavbarMenu] = useState(false);
 
-  const links = [
+  const routes = [
     {
       title: 'Blog',
       link: '/blog',
@@ -34,10 +35,10 @@ export const Navbar = () => {
       </div>
       {showNavbarMenu && (
         <section className='flex flex-col items-start my-2'>
-          {links.map((link, i) => (
-            <article className='px-8 py-1' key={i}>
-              {link.title}
-            </article>
+          {routes.map((route, i) => (
+            <CustomLink key={i} to={route.link}>
+              <article className='px-8 py-1'>{route.title}</article>
+            </CustomLink>
           ))}
         </section>
       )}
