@@ -1,12 +1,8 @@
 import './App.css';
-import { MainLayout } from './shared/main-layout/main-layout';
+import Router from './router/router';
 
 function App() {
-  return (
-    <MainLayout>
-      <h1>Dayanna</h1>
-    </MainLayout>
-  );
+  return <Router />;
 }
 
 export default App;
