@@ -1,7 +1,7 @@
-export const Schedule = () => {
+export const StudyCases = () => {
   return (
     <div className='container'>
-      <h1>Schedule</h1>
+      <h1>StudyCases</h1>
     </div>
   );
 };
