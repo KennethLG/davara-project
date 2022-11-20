@@ -1,15 +1,13 @@
-import React from "react";
-import { Navbar } from "../components/navbar/navbar";
+import { Outlet } from 'react-router-dom';
+import { Navbar } from '../components/navbar/navbar';
 
-interface IMainLayout {
-  children: React.ReactNode;
-}
-
-export const MainLayout = ({ children }: IMainLayout) => {
+export const MainLayout = () => {
   return (
     <>
       <Navbar />
-      {children}
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 };
