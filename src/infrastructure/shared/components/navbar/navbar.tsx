@@ -31,7 +31,10 @@ export const Navbar = () => {
         <Logo />
         <h2>Davara</h2>
 
-        <GiHamburgerMenu onClick={() => setShowNavbarMenu(!showNavbarMenu)} />
+        <GiHamburgerMenu
+          data-testid='hamburger-menu'
+          onClick={() => setShowNavbarMenu(!showNavbarMenu)}
+        />
       </div>
       {showNavbarMenu && (
         <section className='flex flex-col items-start my-2'>
