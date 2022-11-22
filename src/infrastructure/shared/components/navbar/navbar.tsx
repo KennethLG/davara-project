@@ -10,7 +10,12 @@ export const Navbar = () => {
   const switchNavbarMenu = () => () => setShowNavbarMenu(!showNavbarMenu);
 
   return (
-    <nav className='fixed top-0 left-0 p-3 my-auto w-full border border-slate-300'>
+    // a div that changes the height smoothly
+    <nav
+      className={
+        'overflow-hidden select-none fixed top-0 left-0 p-3 my-auto w-full border border-slate-300 transition-[max-height] ease-in-out duration-500'
+      }
+    >
       <div className='flex flex-row justify-around items-center gap-x-2'>
         <CustomLink to='/'>
           <Logo />
