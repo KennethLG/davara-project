@@ -7,7 +7,7 @@ interface ICustomLink {
 
 export const CustomLink = ({ children, to }: ICustomLink) => {
   return (
-    <Link className='text-black' to={to}>
+    <Link className='text-black cursor-pointer' to={to}>
       {children}
     </Link>
   );
