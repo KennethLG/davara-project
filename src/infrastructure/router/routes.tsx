@@ -1,10 +1,10 @@
 import { RouteObject } from 'react-router-dom';
-import { Blog } from '../pages/blog/blog';
-import { Conferences } from '../pages/conferences/conferences';
-import { Home } from '../pages/home/home';
-import { Schedule } from '../pages/schedule/schedule';
-import { StudyCases } from '../pages/study-cases/study-cases';
-import { MainLayout } from '../shared/main-layout/main-layout';
+import { Blog } from '../pages/blog';
+import { Conferences } from '../pages/conferences';
+import { Home } from '../pages/home';
+import { Schedule } from '../pages/schedule';
+import { StudyCases } from '../pages/study-cases';
+import { MainLayout } from '../shared/main-layout';
 
 const routes: RouteObject[] = [
   {

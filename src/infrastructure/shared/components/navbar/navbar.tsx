@@ -1,7 +1,7 @@
 import { Logo } from './logo';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
-import { CustomLink } from '../customLink/customLink';
+import { CustomLink } from '../customLink';
 import { NavList } from './list';
 
 export const Navbar = () => {
